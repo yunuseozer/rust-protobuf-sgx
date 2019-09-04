@@ -20,6 +20,7 @@
 //! and encode messages using text format.
 
 use std;
+use std::prelude::v1::*;
 use std::fmt;
 use std::fmt::Write;
 

@@ -1,4 +1,7 @@
 #[cfg_attr(rustfmt, rustfmt_skip)]
+
+use std::prelude::v1::*;
+
 static RUST_KEYWORDS: &'static [&'static str] = &[
     "as",
     "async",

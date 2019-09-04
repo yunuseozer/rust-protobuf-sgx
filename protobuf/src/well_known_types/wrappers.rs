@@ -19,6 +19,7 @@
 #![allow(unused_results)]
 //! Generated file from `google/protobuf/wrappers.proto`
 
+use std::prelude::v1::*;
 #[derive(PartialEq,Clone,Default)]
 #[cfg_attr(feature = "with-serde", derive(::serde::Serialize, ::serde::Deserialize))]
 pub struct DoubleValue {

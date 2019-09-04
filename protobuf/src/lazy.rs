@@ -4,6 +4,7 @@
 // Avoid deprecation warnings when compiling rust-protobuf
 #![allow(deprecated)]
 
+use std::prelude::v1::*;
 use std::mem;
 use std::sync;
 

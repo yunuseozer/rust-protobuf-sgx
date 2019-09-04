@@ -1,5 +1,6 @@
 //! Implementations of `ProtobufType` for all types.
 
+use std::prelude::v1::*;
 use std::marker;
 use std::mem;
 

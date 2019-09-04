@@ -93,6 +93,14 @@
 #![deny(missing_docs)]
 #![deny(rustdoc::broken_intra_doc_links)]
 
+#![cfg_attr(all(feature = "mesalock_sgx",
+                not(target_env = "sgx")), no_std)]
+#![cfg_attr(all(target_env = "sgx", target_vendor = "mesalock"), feature(rustc_private))]
+
+#[cfg(all(feature = "mesalock_sgx", not(target_env = "sgx")))]
+#[macro_use]
+extern crate sgx_tstd as std;
+
 #[cfg(feature = "bytes")]
 extern crate bytes;
 #[cfg(feature = "with-serde")]
@@ -102,6 +110,7 @@ extern crate serde;
 extern crate serde_derive;
 pub use crate::cached_size::CachedSize;
 #[cfg(feature = "bytes")]
+<<<<<<< HEAD
 pub use crate::chars::Chars;
 pub use crate::clear::Clear;
 pub use crate::coded_input_stream::CodedInputStream;
@@ -161,9 +170,9 @@ pub mod well_known_types;
 mod well_known_types_util;
 
 // used by test
-#[cfg(test)]
+//#[cfg(test)]
 #[path = "../../protobuf-test-common/src/hex.rs"]
-mod hex;
+pub mod hex;
 
 // used by rust-grpc
 pub mod descriptorx;

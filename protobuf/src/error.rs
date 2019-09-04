@@ -1,5 +1,6 @@
 //! Protobuf error type
 
+use std::prelude::v1::*;
 use std::error::Error;
 use std::fmt;
 use std::io;

@@ -2,6 +2,7 @@
 
 //! Version 1 reflection accessors.
 
+use std::prelude::v1::*;
 use std::collections::HashMap;
 use std::fmt;
 use std::hash::Hash;

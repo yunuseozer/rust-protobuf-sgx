@@ -1,6 +1,7 @@
 //! Functions used by generated protobuf code.
 //! Should not be used by programs written by hands.
 
+use std::prelude::v1::*;
 use std::collections::HashMap;
 use std::default::Default;
 use std::hash::Hash;

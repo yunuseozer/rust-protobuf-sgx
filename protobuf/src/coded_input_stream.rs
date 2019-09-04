@@ -2,6 +2,7 @@
 
 //! `CodedInputStream` and `CodedOutputStream` implementations
 
+use std::prelude::v1::*;
 use std::io;
 use std::io::BufRead;
 use std::io::Read;

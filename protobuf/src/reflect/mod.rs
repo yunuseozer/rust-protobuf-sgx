@@ -1,6 +1,7 @@
 //! Reflection implementation for protobuf types.
 
 use crate::message::Message;
+use std::prelude::v1::*;
 
 mod acc;
 pub mod accessor;
