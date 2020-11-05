@@ -811,7 +811,7 @@ impl<'a> CodedInputStream<'a> {
             Ok(t) => t,
             Err(_) => return Err(ProtobufError::WireError(WireError::Utf8Error)),
         };
-        mem::replace(target, s);
+        let _ = mem::replace(target, s);
         Ok(())
     }
 
