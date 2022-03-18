@@ -90,8 +90,9 @@
 //! * [`protoc-bin-vendored`](https://docs.rs/protoc-bin-vendored/=2) contains `protoc` command
 //!   packed into the crate.
 
+#![feature(min_const_generics)]
 #![deny(missing_docs)]
-#![deny(rustdoc::broken_intra_doc_links)]
+//#![deny(rustdoc::broken_intra_doc_links)]
 
 #![cfg_attr(all(feature = "mesalock_sgx",
                 not(target_env = "sgx")), no_std)]
@@ -110,7 +111,6 @@ extern crate serde;
 extern crate serde_derive;
 pub use crate::cached_size::CachedSize;
 #[cfg(feature = "bytes")]
-<<<<<<< HEAD
 pub use crate::chars::Chars;
 pub use crate::clear::Clear;
 pub use crate::coded_input_stream::CodedInputStream;

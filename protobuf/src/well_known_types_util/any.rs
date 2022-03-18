@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 use crate::reflect::MessageDescriptor;
 use crate::well_known_types::Any;
 use crate::Message;

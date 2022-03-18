@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 use super::lexer_impl::LexerError;
 use super::lexer_impl::LexerResult;
 use super::loc::Loc;

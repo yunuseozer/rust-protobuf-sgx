@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 use crate::descriptor::FieldDescriptorProto;
 use crate::descriptor::FieldDescriptorProto_Label;
 use crate::json::json_name;

@@ -4,6 +4,7 @@ use std::mem;
 use std::mem::MaybeUninit;
 use std::ptr;
 use std::slice;
+use std::prelude::v1::*;
 
 use crate::misc::maybe_uninit_write;
 use crate::misc::maybe_uninit_write_slice;

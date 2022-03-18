@@ -1,5 +1,6 @@
 //! `BufRead` pointer or `BufReader` owned.
 
+use std::prelude::v1::*;
 use std::cmp;
 use std::io;
 use std::io::BufRead;
